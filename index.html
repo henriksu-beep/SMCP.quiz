@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMCP Quiz</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+background:#0f172a;
+color:white;
+}
+
+button{
+display:block;
+width:100%;
+padding:15px;
+margin:10px 0;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:#334155;
+color:white;
+}
+
+button:hover{
+background:#475569;
+}
+
+#result{
+margin-top:20px;
+font-size:24px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>⚓ SMCP Quiz</h1>
+
+<h2 id="question"></h2>
+
+<button onclick="answer(0)">A</button>
+<button onclick="answer(1)">B</button>
+<button onclick="answer(2)">C</button>
+<button onclick="answer(3)">D</button>
+
+<div id="result"></div>
+
+<script>
+
+const question =
+"Hva betyr kommandoen TURN PORT 9?";
+
+const correct = 2;
+
+document.getElementById("question").innerText =
+question;
+
+function answer(choice){
+
+if(choice === correct){
+
+document.getElementById("result").innerHTML =
+"✅ Riktig";
+
+}
+else{
+
+document.getElementById("result").innerHTML =
+"❌ Feil";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
