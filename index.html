@@ -1,43 +1,8 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SMCP Quiz</title>
-
-<style>
-body{
-font-family:Arial,sans-serif;
-max-width:800px;
-margin:auto;
-padding:20px;
-background:#0f172a;
-color:white;
-}
-
-button{
-display:block;
-width:100%;
-padding:15px;
-margin:10px 0;
-font-size:18px;
-border:none;
-border-radius:10px;
-cursor:pointer;
-background:#334155;
-color:white;
-}
-
-button:hover{
-background:#475569;
-}
-
-#result{
-margin-top:20px;
-font-size:24px;
-}
-</style>
-
 </head>
 
 <body>
@@ -51,12 +16,12 @@ font-size:24px;
 <button onclick="answer(2)">C</button>
 <button onclick="answer(3)">D</button>
 
-<div id="result"></div>
+<p id="result"></p>
 
 <script>
 
 const question =
-"Hva betyr kommandoen TURN PORT 9?";
+"Hva betyr TURN PORT 9?";
 
 const correct = 2;
 
@@ -83,4 +48,5 @@ document.getElementById("result").innerHTML =
 </script>
 
 </body>
+
 </html>
